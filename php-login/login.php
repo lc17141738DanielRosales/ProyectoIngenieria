@@ -43,14 +43,14 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>Iniciar Sesión</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <?php include 'partials/header.php'; ?>
-    <h1>Login</h1>
+    <h1>Iniciar Sesión</h1>
     <span>o <a href="signup.php">regístrese aquí</a></span>
 
     <?php if(!empty($message)): ?>
