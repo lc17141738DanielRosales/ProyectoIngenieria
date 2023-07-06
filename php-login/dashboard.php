@@ -17,7 +17,6 @@
       $stmt->execute();
       $subjects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-      // Obtenemos las encuestas disponibles para cada materia que imparte el docente
       $available_surveys = array();
       foreach($subjects as $subject) {
         $stmt = $conn->prepare('SELECT * FROM surveys WHERE subject_id = :subject_id');
